@@ -1,25 +1,6 @@
-# Documentação do Sistema
+## Documentação do Sistema
 
-## SUMÁRIO
-- [Dados do Cliente](#dados-do-cliente)
-- [Equipe de Desenvolvimento](#equipe-de-desenvolvimento)
-- [1. Introdução](#1-introdução)
-- [2. Objetivo](#2-objetivo)
-- [3. Escopo](#3-escopo)
-- [4. Backlogs do Produto](#4-backlogs-do-produto)
-- [5. Cronograma](#5-cronograma)
-- [6. Materiais e Métodos](#6-materiais-e-métodos)
-- [7. Resultados](#7-resultados)
-- [8. Conclusão](#8-conclusão)
-- [9. Homologação do MVP junto ao cliente](#9-homologação-do-mvp-junto-ao-cliente)
-- [10. Divulgação](#10-divulgação)
-- [11. Carta de Apresentação](#11-carta-de-apresentação)
-- [12. Carta de Autorização](#12-carta-de-autorização)
-- [13. Relato individual do processo](#13-relato-individual-do-processo)
-
----
-
-## Dados do Cliente
+# Dados do Cliente
 
 **Título do Projeto:** Chocomeire - Um site para gerenciamento de encomendas de doces
 
