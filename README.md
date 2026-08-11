@@ -8,8 +8,6 @@
 
 **CNPJ/CPF:**  51.609.434/0001-24
 
-**Contato:** (19) 99456-4187
-
 **Email do contato:** meire_venditoo@hotmail.com
 
 ---
