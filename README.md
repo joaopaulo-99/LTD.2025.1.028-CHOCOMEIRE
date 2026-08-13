@@ -1,5 +1,3 @@
-## Documentação do Sistema
-
 # Dados do Cliente
 
 **Título do Projeto:** Chocomeire - Um site para gerenciamento de encomendas de doces
@@ -23,19 +21,19 @@
 
 ---
 
-## 1. Introdução 💡
+## 1. Introdução
 
 O cliente identificou dificuldades no controle e organização das encomendas de doces, como anotações manuais, esquecimentos de pedidos e falta de acompanhamento eficaz. Para solucionar isso, será desenvolvido um sistema web de gerenciamento de pedidos que permita registrar, acompanhar e organizar as encomendas de forma centralizada.
 
 ---
 
-## 2. Objetivo 📌
+## 2. Objetivo
 
 Criar um site dinâmico e eficiente para o gerenciamento de encomendas de doces, atendendo às necessidades tanto dos clientes quanto dos proprietários do negócio. A plataforma será um ambiente digital, onde os usuários poderão realizar encomendas de doces personalizados com facilidade e praticidade, enquanto o proprietário terá controle total sobre os pedidos, o estoque e o fluxo de trabalho.
 
 ---
 
-## 3. Escopo 🎯
+## 3. Escopo
 
 ### Funcionalidades para Clientes
 - **Cadastro e Login:** Autenticação segura para clientes.
@@ -45,7 +43,7 @@ Criar um site dinâmico e eficiente para o gerenciamento de encomendas de doces,
 - **Rastreamento de Pedidos:** Status do pedido (ex.: "em preparo" ou "entregue").
 
 ### Funcionalidades para Administradores (Confeiteiros)
-- **Login Administrativo:** Acesso seguro ao painel de controle.
+- **Login Administrativo:** Acesso ao painel de controle.
 - **Gerenciamento de Produtos:** Adicionar, editar ou remover doces no catálogo.
 - **Visualização de Pedidos:** Lista de pedidos feitos pelos clientes com detalhamento.
 - **Atualização de Status:** Controle do progresso do pedido.
@@ -54,9 +52,9 @@ Criar um site dinâmico e eficiente para o gerenciamento de encomendas de doces,
 
 ## Tecnologias e Ferramentas
 - **Linguagem de Programação:** Python.
-- **Framework:** Flask (para construir o back-end e estruturar o site).
-- **Banco de Dados:** SQLite (leve e integrado, perfeito para começar).
-- **ORM:** SQLAlchemy (orientação a objetos para interação com o banco de dados).
+- **Framework:** Flask
+- **Banco de Dados:** SQLite
+- **ORM:** SQLAlchemy
 
 ---
 
@@ -85,114 +83,7 @@ Criar um site dinâmico e eficiente para o gerenciamento de encomendas de doces,
    - `status`: Status do pedido (ex.: "em preparo", "pronto", "entregue").
 
 ---
-
-## Fluxo de Desenvolvimento
-
-### Fase 1: Planejamento
-- Mapear os requisitos detalhados (ex.: número de páginas, funcionalidades adicionais).
-- Criar protótipos simples do layout e fluxo.
-
-### Fase 2: Desenvolvimento
-1. **Configuração do ambiente**
-   - Criar o projeto Flask e instalar dependências (Flask, SQLAlchemy, Flask-WTF, etc.).
-   - Configurar o banco de dados SQLite.
-
-2. **Implementação**
-   - Criar as classes Python (ex.: Cliente, Produto, Pedido) e mapear com SQLAlchemy.
-   - Desenvolver rotas Flask (ex.: `/novo_pedido`, `/listar_produtos`).
-   - Utilizar templates HTML e CSS para o front-end.
-
-### Fase 3: Testes
-- Validar o sistema de login e segurança.
-- Testar rotas, funcionalidades e integração com banco de dados.
-- Garantir que o design seja responsivo.
-
-### Fase 4: Implantação
-- Realizar testes de produção para confirmar funcionalidade.
-
-### Fase 5: Feedback e Ajustes
-- Coletar opiniões de usuários e confeiteiros.
-- Corrigir erros e implementar melhorias conforme necessário.
-
----
-
-## Resultados Esperados
-- Um sistema funcional e intuitivo.
-- Gestão eficiente de pedidos de doces e catálogo de produtos.
-- Escalabilidade para adicionar novas funcionalidades no futuro.
-
-## 4. Backlogs do Produto 📋
-
-## 1. Configuração Inicial
-### Épico: Configuração do Ambiente
-- **Tarefa:** Criar o repositório do projeto.
-- **Tarefa:** Configurar o ambiente Flask.
-  - *Subtarefa:* Instalar Flask, SQLAlchemy e outras dependências.
-  - *Subtarefa:* Configurar SQLite como banco de dados local.
-- **Tarefa:** Criar estrutura básica de diretórios (ex.: templates, static, models).
-
-## 2. Desenvolvimento do Back-end
-### Épico: Implementação das Classes e Banco de Dados
-- **Tarefa:** Criar classe `Cliente` com SQLAlchemy.
-- **Tarefa:** Criar classe `Produto` com SQLAlchemy.
-- **Tarefa:** Criar classe `Pedido` com SQLAlchemy.
-  - *Subtarefa:* Configurar tabelas e chaves primárias/estrangeiras.
-- **Tarefa:** Implementar métodos específicos nas classes (ex.: cálculo do total do pedido).
-
-### Épico: Desenvolvimento das Rotas Flask
-- **Tarefa:** Criar rota `/cadastro_cliente`.
-- **Tarefa:** Criar rota `/login_cliente`.
-- **Tarefa:** Criar rota `/listar_produtos`.
-- **Tarefa:** Criar rota `/novo_pedido`.
-- **Tarefa:** Criar rota `/atualizar_status_pedido`.
-
-## 3. Desenvolvimento do Front-end
-### Épico: Design Responsivo
-- **Tarefa:** Criar layout básico usando Bootstrap/Tailwind CSS.
-  - *Subtarefa:* Design da página inicial.
-  - *Subtarefa:* Design da página de catálogo de produtos.
-  - *Subtarefa:* Design da página de carrinho de compras.
-
-### Épico: Integração Front-end com Back-end
-- **Tarefa:** Utilizar templates Jinja2 para renderizar dados do back-end.
-- **Tarefa:** Implementar formulários HTML para cadastro e login (usando Flask-WTF).
-
-## 4. Funcionalidades Adicionais
-### Épico: Implementação de Autenticação
-- **Tarefa:** Criar sistema de autenticação com hash de senha (ex.: werkzeug.security).
-- **Tarefa:** Implementar validação de sessões para acesso seguro ao site.
-
-### Épico: Carrinho e Pagamento
-- **Tarefa:** Implementar funcionalidade de carrinho.
-- **Tarefa:** Integrar com APIs de pagamento (opcional).
-
-## 5. Testes e Validação
-### Épico: Testes Automatizados
-- **Tarefa:** Escrever testes para rotas Flask (ex.: com pytest ou unittest).
-- **Tarefa:** Validar a interação do sistema com o banco de dados.
-
-### Épico: Feedback do Usuário
-- **Tarefa:** Criar ambiente de testes para coletar sugestões dos clientes/confeiteiros.
-- **Tarefa:** Implementar melhorias com base no feedback.
-
-## 6. Implantação
-### Épico: Hospedagem e Configuração
-- **Tarefa:** Configurar o projeto no PythonAnywhere.
-  - *Subtarefa:* Subir o código para o servidor.
-  - *Subtarefa:* Configurar o banco de dados remoto SQLite.
-
-### Épico: Monitoramento
-- **Tarefa:** Configurar logs no servidor para monitorar erros.
-- **Tarefa:** Implementar ferramentas de análise de uso, como Google Analytics.
-
-## 7. Marketing e Expansão
-### Épico: Divulgação
-- **Tarefa:** Criar contas nas redes sociais para promover o CHOCOMEIRE.
-- **Tarefa:** Desenvolver páginas dedicadas para promoções e contato.
-
----
-
-## 5. Cronograma 📅
+## 4. Cronograma
 
 ## 🗓️ Cronograma do Projeto
 
@@ -206,24 +97,6 @@ Criar um site dinâmico e eficiente para o gerenciamento de encomendas de doces,
 
 
 ---
-
-
-## 6. Materiais e Métodos  🧰
-
-### Modelagem do Sistema
-- Diagrama de Casos de Uso
-![Diagrama de Casos de Uso](static/diagrama.casos.uso.png)
-
-- Diagrama de Classes
-![Diagrama de Classes](static/diagrama.classes.png)
-
-### Tecnologias Utilizadas
-- **Python + Flask**: Backend
-- **HTML/CSS/JS**: Interface do usuário
-- **SQLite/**: Banco de dados
-- **SQLAlchemy/**: orientação a objetos
-- **Lucidchart/Draw.io**: Criação dos diagramas
-
 
 ## 7. Resultados 📈
 
