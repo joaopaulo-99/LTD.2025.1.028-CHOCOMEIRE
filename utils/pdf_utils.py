@@ -96,6 +96,9 @@ def gerar_pdf_pedido(pedido):
     pdf.set_text_color(91, 64, 51)
     pdf.cell(0, 10, f"Total do Pedido: R${total:.2f}", ln=True)
 
-    filename = f"static/pedido_{pedido.id}.pdf"
+    pasta_temp = os.path.join("instance", "pedidos_pdf")
+    os.makedirs(pasta_temp, exist_ok=True)
+
+    filename = os.path.join(pasta_temp, f"pedido_{pedido.id}.pdf")
     pdf.output(filename)
     return filename

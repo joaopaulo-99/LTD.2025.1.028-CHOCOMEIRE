@@ -268,7 +268,14 @@ def baixar_pdf_pedido(pedido_id):
         return redirect(url_for('meus_pedidos'))
 
     pdf_path = gerar_pdf_pedido(pedido)
-    return send_file(pdf_path, as_attachment=True)
+    response = send_file(pdf_path, as_attachment=True)
+
+    @response.call_on_close
+    def limpar_pdf_temporario():
+        if os.path.exists(pdf_path):
+            os.remove(pdf_path)
+
+    return response
 
 if __name__ == '__main__':
     with app.app_context():
